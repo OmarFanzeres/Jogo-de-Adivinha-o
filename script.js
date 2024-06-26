@@ -1,3 +1,23 @@
+/*
+    Jogo de Adivinhação em JavaScript
+Este é um simples jogo de adivinhação implementado em JavaScript, onde o usuário tenta adivinhar um número aleatório entre 1 e 100. O jogo oferece 10 tentativas para acertar o número correto.
+
+Funcionalidades:
+Geração de Número Aleatório:
+
+O número aleatório é gerado usando Math.random() e Math.floor() para garantir um valor inteiro entre 1 e 100.
+Verificação da Adivinhação:
+
+A função checkGuess() é chamada quando o usuário tenta adivinhar.
+Ela compara a adivinhação do usuário com o número aleatório e fornece feedback se o palpite foi correto, muito alto ou muito baixo.
+Atualiza o número de tentativas restantes e termina o jogo se o usuário acertar ou esgotar todas as tentativas.
+Reset do Jogo:
+
+A função resetGame() reinicia o jogo, gerando um novo número aleatório e restaurando o número máximo de tentativas.
+Limpa os campos de entrada e reseta a cor de fundo da página.
+
+
+*/
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 10;
 
